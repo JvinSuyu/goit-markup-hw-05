@@ -51,6 +51,8 @@ ul {
 }
 .header {
     padding: 24px;
+    border-bottom: 1px solid var(--cornflower);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),  0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .header-container{
     display: flex;
@@ -106,10 +108,12 @@ main {
     position: absolute;
     left: 0;
     bottom: -25px;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-item-link {
     font-weight: 500;
     color: var(--navyblue);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-item:hover .nav-list-item-link{
@@ -161,14 +165,13 @@ main {
     color: var(--white);
     background: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition: all 0.1s ease-in-out;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 48px auto 0;
     display: block;
 }
 
 .hero-button:hover {
     background: var(--ocean);
-    color: var(--white);
 }
 
 .hero-button:active {
@@ -326,6 +329,7 @@ main {
 }
 .teams-social-list li:hover {
     background-color: var(--ocean);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-img{
     fill: var(--cloud);
@@ -362,9 +366,11 @@ main {
 }
 .customers-list-item:hover {
     border-color:  var(--ocean);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon-item-link{
     color: var(--lightslate);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list-item:hover .customer-icon-item-link{
     color: var(--ocean);
@@ -372,6 +378,7 @@ main {
 .customers-list-item-img{
     width: 100%;
     fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio Header, Main and Footer */
@@ -498,7 +505,7 @@ main {
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(30, 150, 243, 0.90);
+    background-color: var(--iris);
     padding: 0px 24px;
     color: var(--white);
     text-align: left;
@@ -598,6 +605,7 @@ main {
 
 .footer-social-item:hover {
     background: var(--green);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
