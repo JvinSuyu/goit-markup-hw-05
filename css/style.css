@@ -721,7 +721,7 @@ main {
 }
 
 .modal-close svg {
-    fill: currentColor;
+    stroke: currentColor;
     transition: fill var(--transition-duration) var(--animation-timing-function);
 }
 
