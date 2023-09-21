@@ -354,11 +354,11 @@ main {
     background: var(--iris);
     border-radius: 50%;
     cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teams-social-list li:hover {
     background-color: var(--ocean);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-img {
@@ -397,11 +397,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-item:hover {
     border-color: var(--ocean);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-icon-item-link {
@@ -650,6 +650,7 @@ main {
     background: var(--iris);
     border-radius: 50%;
     cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-img {
@@ -658,7 +659,6 @@ main {
 
 .footer-social-item:hover {
     background: var(--green);
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
